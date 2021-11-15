@@ -1,0 +1,99 @@
+
+ <nav class="navbar navbar-expand-lg">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="row">
+          <div class="col">
+        <li class="nav-item">
+          <a  (click)="filter('Bed')" routerLink="products" data-toggle="tooltip" data-placement="bottom" title="Bed">
+          <img class="categories"  src="assets/icons/bed.png" alt="">
+        </a>
+      </li>
+      </div>
+      <div class="col">
+      <li class="nav-item">
+                <a  (click)="filter('Chair')" routerLink="products"data-toggle="tooltip" data-placement="bottom" title="Chair">
+                  <img class="categories" g src="assets/icons/chair.png" alt="">
+                </a>
+              </li>
+              </div>
+              <div class="col">
+              <li class="nav-item">
+                <a  (click)="filter('Wardrobe')" routerLink="products" data-toggle="tooltip" data-placement="bottom" title="Wardrobe">
+                  <img class="categories" g src="assets/icons/cupboard.png" alt="">
+                </a>
+              </li>
+              </div>
+              <div class="col">
+              <li class="nav-item">
+                <a  (click)="filter('Decor')" routerLink="products" data-toggle="tooltip" data-placement="bottom" title="Decor">
+                  <img class="categories" src="assets/icons/decor.png" alt="">
+                </a>
+              </li>
+              </div>
+              <div class="col">
+              <li class="nav-item">
+                <a  (click)="filter('Dining')" routerLink="products" data-toggle="tooltip" data-placement="bottom" title="Dining">
+                  <img class="categories" src="assets/icons/dining.png" alt="">
+                </a>
+              </li>
+              </div>
+              <div class="col">
+              <li class="nav-item">
+                <a  (click)="filter('Mattress')" routerLink="products" data-toggle="tooltip" data-placement="bottom" title="Mattress">
+                  <img class="categories" src="assets/icons/mattress.png" alt="">
+                </a>
+              </li>
+              </div>
+              <div class="col">
+              <li class="nav-item">
+                <a  (click)="filter('Sofa')" routerLink="products" data-toggle="tooltip" data-placement="bottom" title="Sofa">
+                  <img class="categories" src="assets/icons/sofa.png" alt="">
+                </a>
+              </li>
+              </div>
+              <div class="col">
+              <li class="nav-item">
+                <a  (click)="search($event)" routerLink="products" data-toggle="tooltip" data-placement="bottom" title="Coffe Table">
+                  <img class="categories" src="assets/icons/table.png" alt="">
+                </a>
+              </li>
+              </div>
+              <div class="col">
+              <li class="nav-item">
+                <a  (click)="filter('TV Units')" routerLink="products" data-toggle="tooltip" data-placement="bottom" title="TV Unit">
+                  <img class="categories" src="assets/icons/tv-unit.png" alt="">
+                </a>
+              </li>
+              </div>
+              <div class="col">
+              <li class="nav-item">
+                <a  (click)="filter('Bookshelves')" routerLink="products" data-toggle="tooltip" data-placement="bottom" title="Bookshelves">
+                  <img class="categories" src="assets/icons/bookshelves.png" alt="">
+                </a>
+              </li>
+              </div>
+        </div>
+      </ul>
+    </nav>
+<div class="container container-fluid " >
+  <div class="search-product">
+    <input type="text" class="search-txt" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="Type to search">
+    <a class="nav-link search-btn" role="button" ><img class="" src="assets/icons/loupe.png" alt="" height="25px"></a>
+  </div>
+  <div class="row">
+    <ng-container *ngFor="let item of productList | filter:searchKey:'category'">
+      <!-- style="width: 18rem;" -->
+<div class="card col-md-3" >
+  <img src="{{item.image_path}}" class="card-img-top" alt="">
+  <div class="card-body">
+    <h5 class="card-title">{{item.name}}</h5>
+    <p class="card-text">Price:{{item.price}}</p>
+    <div class="buttons">
+    <a class="btn btn-outline-primary" (click)="addtocart(item)"><img src="assets/icons/shopping-cart.png" alt="" height="30px"></a>
+    <a class="btn btn-outline-danger" (click)="addtowishlist(item)"><img src="assets/icons/heart.png" alt="" height="25px"></a>
+    </div>
+  </div>
+</div>
+</ng-container>
+  </div>
+</div>

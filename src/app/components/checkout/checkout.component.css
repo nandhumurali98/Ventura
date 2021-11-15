@@ -1,0 +1,11 @@
+*{
+  margin: 2%;
+}
+.container{
+  border: 1px solid black;
+}
+input{
+  border: none;
+  border-bottom: 1px solid black;
+  outline:none;
+}

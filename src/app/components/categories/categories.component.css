@@ -1,0 +1,28 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Architects Daughter', cursive;
+}
+.title{
+  margin-top: 5%;
+  text-align: center;
+}
+hr{
+  margin: 1% 45% 0 45%;
+  border: 1.5px dotted rgb(90, 87, 87);
+}
+.container{
+  margin: 5% 0 5% 2%;
+}
+.container,.inner-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-container{
+  margin-top: 5%;
+  padding: 2%;
+}
+.icons{
+  height: 50px;
+  width: 50px;
+}

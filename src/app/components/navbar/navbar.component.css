@@ -1,0 +1,32 @@
+.fas{
+  font-size: 22px;
+  /* padding: 0 5px 0 5px; */
+  color: rgb(88, 27, 88);
+}
+.nav-container{
+  position: relative;
+  top: 15px;
+}
+.menu{
+  background-color: rgb(230, 230, 230);
+  width: 100%;
+  box-shadow: 0.1em 0.1em 2em 0.1em;
+  height: 70px;
+}
+.cart{
+  background-color: rgb(131, 181, 223);
+  position: relative;
+  left: 30px;
+  top: -50px;
+  border-radius:50% ;
+  margin: 0;
+}
+.wishlist{
+  background-color: rgb(226, 134, 134);
+  position: relative;
+  right: -25px;
+  top: -45px;
+  border-radius:50% ;
+  margin: 0;
+}
+

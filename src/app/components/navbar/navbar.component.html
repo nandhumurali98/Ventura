@@ -1,0 +1,122 @@
+<div id="app">
+
+  <nav class="navbar menu navbar-expand-lg">
+
+    <div class="container-fluid">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/logo.svg" alt="" width="150">
+        </a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div class=" nav-container">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item dropdown">
+            <!-- Categories -->
+            <a class="nav-link dropdown-toggle" *ngIf="!isLoggedIn"  id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/icons/menu.png" alt="" height="25px">
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+              <li><a class="dropdown-item" href="products" (click)="filter('Bed')" routerLink="products" routerLinkActive="active">Beds</a></li>
+              <li><a class="dropdown-item" href="products" (click)="filter('Chair')" routerLink="products" routerLinkActive="active">Chair</a>
+              </li>
+              <li><a class="dropdown-item" href="products" (click)="filter('Wardrobe')" routerLink="products" routerLinkActive="active">Wardrobe</a>
+              </li>
+              <li><a class="dropdown-item" href="products"  (click)="filter('Decor')" routerLink="products" routerLinkActive="active">Decor</a>
+              </li>
+              <li><a class="dropdown-item" href="products" (click)="filter('Dining')" routerLink="products" routerLinkActive="active">Dining</a>
+              </li>
+              <li><a class="dropdown-item" href="products" (click)="filter('Mattress')" routerLink="products" routerLinkActive="active">Mattresses</a></li>
+              <li><a class="dropdown-item" href="products" (click)="filter('Sofa')" routerLink="products" routerLinkActive="active">Sofa</a></li>
+              <li><a class="dropdown-item" href="products" (click)="filter('Coffee Table')" routerLink="products" routerLinkActive="active">Coffee
+                  Tables</a></li>
+              <li><a class="dropdown-item" href="products" (click)="filter('TV Units')" routerLink="products" routerLinkActive="active">TV Units</a>
+              </li>
+              <li><a class="dropdown-item" href="products" (click)="filter('Bookshelves')" routerLink="products"
+                  routerLinkActive="active">Bookshelves</a></li>
+
+            </ul>
+
+          </li>
+
+          <!-- isLoggedIn -->
+          <li class="nav-item">
+            <a class="nav-link" *ngIf="isLoggedIn" routerLink="admin" role="button">
+              <img src="assets/icons/user.png" alt="" height="25px">
+           </a>
+            <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item nav-link" routerLink="admin" href="">Admin</a></li>
+              <li><a class="dropdown-item nav-link" routerLink="login" href="">My Orders</a></li>
+
+            </ul> -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" *ngIf="isLoggedIn" routerLink="admin/products"href="">Products</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" *ngIf="isLoggedIn" (click)="logout()" href="">Logout</a></li>
+
+          <!-- !isLoggedIn -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" *ngIf="!isLoggedIn" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/icons/user.png" alt="" height="25px">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item nav-link" routerLink="login" data-bs-toggle="modal" data-bs-target="#login"
+                  href="">Login</a></li>
+              <!-- <li><a class="dropdown-item nav-link" routerLink="login" data-bs-toggle="modal" data-bs-target="#login"
+                  href="">Admin Login</a></li> -->
+              <li><a class="dropdown-item nav-link" routerLink="register" data-bs-toggle="modal"
+                  data-bs-target="#register" href="">Register</a></li>
+            </ul>
+          </li>
+
+          <!-- Wishlist -->
+          <li class="nav-item">
+            <a class="nav-link" *ngIf="!isLoggedIn" routerLink="wishlist"><img src="assets/icons/heart.png" alt="" height="25px"></a>
+            <div class="badge wishlist">{{totalwishList}}</div>
+          </li>
+
+          <!-- Shopping Cart -->
+          <li class="nav-item">
+            <a class="nav-link"routerLink="cart" *ngIf="!isLoggedIn" href="#"><img src="assets/icons/shopping-cart.png" alt=""
+                height="30px"></a>
+                <div class="badge cart">{{totalItem}}</div>
+          </li>
+
+        </ul>
+
+        <!-- <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
+          <li class="nav-item">
+            <a href="/profile" class="nav-link" routerLink="profile">{{ username }}</a>
+          </li>
+          <li class="nav-item">
+            <a href class="nav-link" (click)="logout()">LogOut</a>
+          </li>
+        </ul> -->
+
+        <!-- <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

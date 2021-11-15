@@ -1,0 +1,19 @@
+.carousel{
+  margin-top: 5%;
+}
+.carousel-control-prev{
+  position: absolute;
+  left: -110px;
+  margin: 0;
+  padding: 0;
+}
+.carousel-control-next{
+  position: absolute;
+  right: -100px;
+  margin: 0;
+  padding: 0;
+}
+.carousel-control-prev:hover,.carousel-control-next:hover{
+  background-color: white;
+  transition: 0.3s;
+}

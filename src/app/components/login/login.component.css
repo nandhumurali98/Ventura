@@ -1,0 +1,43 @@
+*{
+  font-family: 'Montserrat', cursive;
+}
+.login{
+  position: relative;
+  left: 180px;
+}
+.login-input{
+  position: relative;
+  left: 100px;
+}
+.btn{
+  position: relative;
+  left: 80px;
+}
+input{
+  border: none;
+  border-bottom: 1px solid black;
+  outline:none;
+}
+.alert{
+  width: 45%;
+  background-color: rgb(233, 190, 187);
+  margin: 1% 0 1% 0;
+  text-align: center;
+  font-size: 13px;
+  padding: 0;
+}
+.alert-danger{
+  background-color: rgb(233, 190, 187);
+  text-align: center;
+  padding: 5%;
+  position: relative;
+  right: 100px;
+}
+.alert-success{
+  background-color: rgb(187, 233, 189);
+  text-align: center;
+  padding: 5%;
+  font-weight: 600;
+  position: relative;
+  right: 140px;
+}

@@ -1,0 +1,601 @@
+[{
+  "_id": {
+    "$oid": "6152e38344ac8cd9328a055c"
+  },
+  "category": "Bed",
+  "name": "Teak wood bed",
+  "image_path": "assets/products/Bed_1.jpg",
+  "price": 15000,
+  "__v": 0,
+  "category_id": 1
+},{
+  "_id": {
+    "$oid": "6152e92d44ac8cd9328a0574"
+  },
+  "category": "Bed",
+  "name": "High Gloss Bed",
+  "image_path": "assets/products/Bed_2.jpg",
+  "price": 20000,
+  "__v": 0,
+  "category_id": 1
+},{
+  "_id": {
+    "$oid": "6152e98544ac8cd9328a0578"
+  },
+  "category": "Bed",
+  "name": "Upholstered Storage Bed",
+  "image_path": "assets/products/Bed_3.jpg",
+  "price": 18000,
+  "__v": 0,
+  "category_id": 1
+},{
+  "_id": {
+    "$oid": "6152e9d344ac8cd9328a057c"
+  },
+  "category": "Bed",
+  "name": "Californian Walnut Finish Bed",
+  "image_path": "assets/products/Bed_4.jpg",
+  "price": 12000,
+  "__v": 0,
+  "category_id": 1
+},{
+  "_id": {
+    "$oid": "6152ea0844ac8cd9328a0580"
+  },
+  "category": "Bed",
+  "name": "Semi Gloss Finish Bed",
+  "image_path": "assets/products/Bed_5.jpg",
+  "price": 25000,
+  "__v": 0,
+  "category_id": 1
+},{
+  "_id": {
+    "$oid": "6152ea3a44ac8cd9328a0584"
+  },
+  "category": "Bed",
+  "name": "Dark Walnut Finish Bed",
+  "image_path": "assets/products/Bed_6.jpg",
+  "price": 22000,
+  "__v": 0,
+  "category_id": 1
+},{
+  "_id": {
+    "$oid": "6152eada44ac8cd9328a0588"
+  },
+  "category": "Chair",
+  "name": "Contour Patchwork Chair",
+  "image_path": "assets/products/Chair_1.jpg",
+  "price": 22000,
+  "__v": 0,
+  "category_id": 2
+},{
+  "_id": {
+    "$oid": "61532bd844ac8cd9328a05a6"
+  },
+  "category": "Chair",
+  "name": "Griffin Recliner",
+  "image_path": "assets/products/Chair_2.jpg",
+  "price": 18000,
+  "__v": 0,
+  "category_id": 2
+},{
+  "_id": {
+    "$oid": "61532c5544ac8cd9328a05ac"
+  },
+  "category": "Chair",
+  "name": "Genoa Wing Chair",
+  "image_path": "assets/products/Chair_3jpg",
+  "price": 21000,
+  "__v": 0,
+  "category_id": 2
+},{
+  "_id": {
+    "$oid": "61532ca444ac8cd9328a05b2"
+  },
+  "category": "Chair",
+  "name": "Owen Lounge Chair",
+  "image_path": "assets/products/Chair_4.jpg",
+  "price": 4000,
+  "__v": 0,
+  "category_id": 2
+},{
+  "_id": {
+    "$oid": "61532d0f44ac8cd9328a05b8"
+  },
+  "category": "Chair",
+  "name": "Ikeda Armchair",
+  "image_path": "assets/products/Chair_6.jpg",
+  "price": 10000,
+  "__v": 0,
+  "category_id": 2
+},{
+  "_id": {
+    "$oid": "61532d9944ac8cd9328a05be"
+  },
+  "category": "Wardrobe",
+  "name": "High Gloss 2 Door Wardrobe",
+  "image_path": "assets/products/Wardrobe_1.jpg",
+  "price": 14000,
+  "__v": 0,
+  "category_id": 3
+},{
+  "_id": {
+    "$oid": "61532dff44ac8cd9328a05c4"
+  },
+  "category": "Wardrobe",
+  "name": "Colombian Walnut 3 Door Wardrobe",
+  "image_path": "assets/products/Wardrobe_2.jpg",
+  "price": 24000,
+  "__v": 0,
+  "category_id": 3
+},{
+  "_id": {
+    "$oid": "61532e3d44ac8cd9328a05ca"
+  },
+  "category": "Wardrobe",
+  "name": "Hilton 2 Door Wardrobe",
+  "image_path": "assets/products/Wardrobe_3.jpg",
+  "price": 23000,
+  "__v": 0,
+  "category_id": 3
+},{
+  "_id": {
+    "$oid": "61532e7644ac8cd9328a05d0"
+  },
+  "category": "Wardrobe",
+  "name": "Teak Wardrobe",
+  "image_path": "assets/products/Wardrobe_4.jpg",
+  "price": 25000,
+  "__v": 0,
+  "category_id": 3
+},{
+  "_id": {
+    "$oid": "61532eb144ac8cd9328a05d6"
+  },
+  "category": "Wardrobe",
+  "name": "Hilton 3 Door Wardrobe",
+  "image_path": "assets/products/Wardrobe_5.jpg",
+  "price": 26000,
+  "__v": 0,
+  "category_id": 3
+},{
+  "_id": {
+    "$oid": "61532f0444ac8cd9328a05dc"
+  },
+  "category": "Wardrobe",
+  "name": "Carmen 4 Door Wardrobe",
+  "image_path": "assets/products/Wardrobe_6.jpg",
+  "price": 26000,
+  "__v": 0,
+  "category_id": 3
+},{
+  "_id": {
+    "$oid": "61532f9544ac8cd9328a05e2"
+  },
+  "category": "Decor",
+  "name": "Floor Lamp with Side Table",
+  "image_path": "assets/products/Decor_1.jpg",
+  "price": 3000,
+  "__v": 0,
+  "category_id": 4
+},{
+  "_id": {
+    "$oid": "6153300244ac8cd9328a05e8"
+  },
+  "category": "Decor",
+  "name": "Vera Flower Wall Decor",
+  "image_path": "assets/products/Decor_2.jpg",
+  "price": 4000,
+  "__v": 0,
+  "category_id": 4
+},{
+  "_id": {
+    "$oid": "615330a044ac8cd9328a05fd"
+  },
+  "category": "Decor",
+  "name": "Farzan Figurine Set",
+  "image_path": "assets/products/Decor_3.jpg",
+  "price": 6000,
+  "__v": 0,
+  "category_id": 4
+},{
+  "_id": {
+    "$oid": "6153312244ac8cd9328a0603"
+  },
+  "category": "Decor",
+  "name": "Cassiel Chandelier",
+  "image_path": "assets/products/Decor_4.jpg",
+  "price": 7000,
+  "__v": 0,
+  "category_id": 4
+},{
+  "_id": {
+    "$oid": "6153319844ac8cd9328a0609"
+  },
+  "category": "Decor",
+  "name": "Hudson Wall Light",
+  "image_path": "assets/products/Decor_5.jpg",
+  "price": 5000,
+  "__v": 0,
+  "category_id": 4
+},{
+  "_id": {
+    "$oid": "6153320544ac8cd9328a060f"
+  },
+  "category": "Decor",
+  "name": "Cilin Hanging Lamp",
+  "image_path": "assets/products/Decor_6.jpg",
+  "price": 7500,
+  "__v": 0,
+  "category_id": 4
+},{
+  "_id": {
+    "$oid": "615332ac44ac8cd9328a0615"
+  },
+  "category": "Dining",
+  "name": "6 Seater Dining Table",
+  "image_path": "assets/products/Dining_1.jpg",
+  "price": 28000,
+  "__v": 0,
+  "category_id": 5
+},{
+  "_id": {
+    "$oid": "615332e544ac8cd9328a061b"
+  },
+  "category": "Dining",
+  "name": "6 Seater Walnut Dining Table",
+  "image_path": "assets/products/Dining_2.jpg",
+  "price": 30000,
+  "__v": 0,
+  "category_id": 5
+},{
+  "_id": {
+    "$oid": "6153331d44ac8cd9328a0621"
+  },
+  "category": "Dining",
+  "name": "4 Seater Teak Dining Table",
+  "image_path": "assets/products/Dining_3.jpg",
+  "price": 32000,
+  "__v": 0,
+  "category_id": 5
+},{
+  "_id": {
+    "$oid": "6153339844ac8cd9328a0627"
+  },
+  "category": "Dining",
+  "name": "Griffin Dining Table",
+  "image_path": "assets/products/Dining_5.jpg",
+  "price": 34000,
+  "__v": 0,
+  "category_id": 5
+},{
+  "_id": {
+    "$oid": "615333c744ac8cd9328a062f"
+  },
+  "category": "Dining",
+  "name": "8 Seater Dining Table",
+  "image_path": "assets/products/Dining_6.jpg",
+  "price": 35000,
+  "__v": 0,
+  "category_id": 5
+},{
+  "_id": {
+    "$oid": "6153344544ac8cd9328a063c"
+  },
+  "category": "Dining",
+  "name": "4 Seater Dining Table",
+  "image_path": "assets/products/Dining_4.jpg",
+  "price": 29000,
+  "__v": 0,
+  "category_id": 5
+},{
+  "_id": {
+    "$oid": "615334bf44ac8cd9328a0640"
+  },
+  "category": "Mattress",
+  "name": "Coir Mattress",
+  "image_path": "assets/products/Matt_1.jpg",
+  "price": 12000,
+  "__v": 0,
+  "category_id": 6
+},{
+  "_id": {
+    "$oid": "6153351044ac8cd9328a064d"
+  },
+  "category": "Mattress",
+  "name": "Spring Mattress",
+  "image_path": "assets/products/Matt_2.jpg",
+  "price": 14000,
+  "__v": 0,
+  "category_id": 6
+},{
+  "_id": {
+    "$oid": "6153354844ac8cd9328a0651"
+  },
+  "category": "Mattress",
+  "name": "Latex Spring Mattress",
+  "image_path": "assets/products/Matt_3.jpg",
+  "price": 8000,
+  "__v": 0,
+  "category_id": 6
+},{
+  "_id": {
+    "$oid": "6153356e44ac8cd9328a0655"
+  },
+  "category": "Mattress",
+  "name": "Pocket Spring Mattress",
+  "image_path": "assets/products/Matt_4.jpg",
+  "price": 9000,
+  "__v": 0,
+  "category_id": 6
+},{
+  "_id": {
+    "$oid": "6153359e44ac8cd9328a0659"
+  },
+  "category": "Mattress",
+  "name": "Foam Mattress",
+  "image_path": "assets/products/Matt_5.jpg",
+  "price": 11000,
+  "__v": 0,
+  "category_id": 6
+},{
+  "_id": {
+    "$oid": "615335d944ac8cd9328a065d"
+  },
+  "category": "Mattress",
+  "name": "Coir & Foam Mattress",
+  "image_path": "assets/products/Matt_6.jpg",
+  "price": 15000,
+  "__v": 0,
+  "category_id": 6
+},{
+  "_id": {
+    "$oid": "615336e544ac8cd9328a0665"
+  },
+  "category": "Sofa",
+  "name": "Retro Patchwork Sofa",
+  "image_path": "assets/products/Sofa_1.jpg",
+  "price": 35000,
+  "__v": 0,
+  "category_id": 7
+},{
+  "_id": {
+    "$oid": "615337ec44ac8cd9328a0669"
+  },
+  "category": "Sofa",
+  "name": "Arthur Futon",
+  "image_path": "assets/products/Sofa_2.jpg",
+  "price": 38000,
+  "__v": 0,
+  "category_id": 7
+},{
+  "_id": {
+    "$oid": "6153384644ac8cd9328a066d"
+  },
+  "category": "Sofa",
+  "name": "Elite Green Chaise Lounger",
+  "image_path": "assets/products/Sofa_3.jpg",
+  "price": 40000,
+  "__v": 0,
+  "category_id": 7
+},{
+  "_id": {
+    "$oid": "6153389144ac8cd9328a0671"
+  },
+  "category": "Sofa",
+  "name": "Clara Velvet Sofa",
+  "image_path": "assets/products/Sofa_5.jpg",
+  "price": 42000,
+  "__v": 0,
+  "category_id": 7
+},{
+  "_id": {
+    "$oid": "615338b044ac8cd9328a0675"
+  },
+  "category": "Sofa",
+  "name": "Leather Sofa",
+  "image_path": "assets/products/Sofa_6.jpg",
+  "price": 43000,
+  "__v": 0,
+  "category_id": 7
+},{
+  "_id": {
+    "$oid": "61533c5544ac8cd9328a067b"
+  },
+  "category": "Coffee Table",
+  "name": "Epilson Coffee Table",
+  "image_path": "assets/products/CF_1.jpg",
+  "price": 24000,
+  "__v": 0,
+  "category_id": 8
+},{
+  "_id": {
+    "$oid": "61533c9344ac8cd9328a067f"
+  },
+  "category": "Coffee Table",
+  "name": "Dyson Coffee Table",
+  "image_path": "assets/products/CF_2.jpg",
+  "price": 18500,
+  "__v": 0,
+  "category_id": 8
+},{
+  "_id": {
+    "$oid": "61533cc744ac8cd9328a0683"
+  },
+  "category": "Coffee Table",
+  "name": "Dark Walnut Coffee Table",
+  "image_path": "assets/products/CF_3.jpg",
+  "price": 19900,
+  "__v": 0,
+  "category_id": 8
+},{
+  "_id": {
+    "$oid": "61533d9d44ac8cd9328a0687"
+  },
+  "category": "Coffee Table",
+  "name": "Morrocan 4-Seater Coffee Table",
+  "image_path": "assets/products/CF_4.jpg",
+  "price": 21900,
+  "__v": 0,
+  "category_id": 8
+},{
+  "_id": {
+    "$oid": "61533e1544ac8cd9328a068b"
+  },
+  "category": "Coffee Table",
+  "name": "Penland Coffee Table",
+  "image_path": "assets/products/CF_5.jpg",
+  "price": 24200,
+  "__v": 0,
+  "category_id": 8
+},{
+  "_id": {
+    "$oid": "61533e4244ac8cd9328a068f"
+  },
+  "category": "Coffee Table",
+  "name": "Tate Display Coffee Table",
+  "image_path": "assets/products/CF_6.jpg",
+  "price": 26300,
+  "__v": 0,
+  "category_id": 8
+},{
+  "_id": {
+    "$oid": "61533f9f44ac8cd9328a0693"
+  },
+  "category": "TV Units",
+  "name": "Zephyr Large TV Unit",
+  "image_path": "assets/products/TV_1.jpg",
+  "price": 50000,
+  "__v": 0,
+  "category_id": 9
+},{
+  "_id": {
+    "$oid": "61533fda44ac8cd9328a0697"
+  },
+  "category": "TV Units",
+  "name": "High Gloss XL TV Units",
+  "image_path": "assets/products/TV_2.jpg",
+  "price": 51000,
+  "__v": 0,
+  "category_id": 9
+},{
+  "_id": {
+    "$oid": "6153402744ac8cd9328a069b"
+  },
+  "category": "TV Units",
+  "name": "Vector TV Units",
+  "image_path": "assets/products/TV_3.jpg",
+  "price": 5600,
+  "__v": 0,
+  "category_id": 9
+},{
+  "_id": {
+    "$oid": "6153406544ac8cd9328a069f"
+  },
+  "category": "TV Units",
+  "name": "Celestin XL TV Unit",
+  "image_path": "assets/products/TV_4.jpg",
+  "price": 45000,
+  "__v": 0,
+  "category_id": 9
+},{
+  "_id": {
+    "$oid": "615340a944ac8cd9328a06a3"
+  },
+  "category": "TV Units",
+  "name": "Zephyr High TV Unit",
+  "image_path": "assets/products/TV_5.jpg",
+  "price": 57000,
+  "__v": 0,
+  "category_id": 9
+},{
+  "_id": {
+    "$oid": "615340eb44ac8cd9328a06a7"
+  },
+  "category": "TV Units",
+  "name": "Floor Standing TV Unit",
+  "image_path": "assets/products/TV_6.jpg",
+  "price": 33000,
+  "__v": 0,
+  "category_id": 9
+},{
+  "_id": {
+    "$oid": "6153413e44ac8cd9328a06ab"
+  },
+  "category": "Bookshelves",
+  "name": "Alberto Bookshelves",
+  "image_path": "assets/products/Bs_1.jpg",
+  "price": 24899,
+  "__v": 0,
+  "category_id": 10
+},{
+  "_id": {
+    "$oid": "6153417f44ac8cd9328a06af"
+  },
+  "category": "Bookshelves",
+  "name": "Theodore Open Display Bookshelves",
+  "image_path": "assets/products/Bs_2.jpg",
+  "price": 12239,
+  "__v": 0,
+  "category_id": 10
+},{
+  "_id": {
+    "$oid": "615341ee44ac8cd9328a06b3"
+  },
+  "category": "Bookshelves",
+  "name": "Open Display With Glassdoor Bookshelves",
+  "image_path": "assets/products/Bs_3.jpg",
+  "price": 17399,
+  "__v": 0,
+  "category_id": 10
+},{
+  "_id": {
+    "$oid": "6153422344ac8cd9328a06b7"
+  },
+  "category": "Bookshelves",
+  "name": "Rhodes Folding Bookshelf",
+  "image_path": "assets/products/Bs_4.jpg",
+  "price": 13259,
+  "__v": 0,
+  "category_id": 10
+},{
+  "_id": {
+    "$oid": "6153425244ac8cd9328a06bb"
+  },
+  "category": "Bookshelves",
+  "name": "Malabar Barrister Bookshelf",
+  "image_path": "assets/products/Bs_5.jpg",
+  "price": 24299,
+  "__v": 0,
+  "category_id": 10
+},{
+  "_id": {
+    "$oid": "6153429544ac8cd9328a06bf"
+  },
+  "category": "Bookshelves",
+  "name": "Austen Bookshelf",
+  "image_path": "assets/products/Bs_6.jpg",
+  "price": 8799,
+  "__v": 0,
+  "category_id": 10
+},{
+  "_id": {
+    "$oid": "6153435e44ac8cd9328a06cc"
+  },
+  "category": "Chair",
+  "name": "Grey Lounge Chair",
+  "image_path": "assets/products/Chair_5.jpg",
+  "price": 19250,
+  "__v": 0,
+  "category_id": 2
+},{
+  "_id": {
+    "$oid": "615343fe44ac8cd9328a06d0"
+  },
+  "category": "Sofa",
+  "name": "Flower Pattern Sofa",
+  "image_path": "assets/products/Sofa_5.jpg",
+  "price": 20250,
+  "__v": 0,
+  "category_id": 7
+}]

@@ -1,0 +1,64 @@
+<div class="row">
+  <div class="col">
+    <div class="container">
+    <form #f="ngForm" name="form" (ngSubmit)="f.form.valid && onSubmit()" novalidate>
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <pre></pre>
+        <input type="text" name="name" [(ngModel)]="form.name" required #name="ngModel" autocomplete="off">
+        <div *ngIf="name.untouched && f.submitted" class="alert">Name required!</div>
+        <pre></pre>
+      </div>
+
+      <div class="form-group">
+         <label for="address">Address</label>
+         <pre></pre>
+         <input type="text" name="address"  [(ngModel)]="form.address" required  #address="ngModel">
+         <div *ngIf="address.errors?.required && f.submitted"class="alert ">Address required!</div>
+      </div>
+
+      <div class="form-group">
+        <label for="mobile">Mobile</label>
+        <pre></pre>
+        <input type="text" name="mobile"  [(ngModel)]="form.mobile" required  #mobile="ngModel">
+        <div *ngIf="mobile.errors?.required && f.submitted"class="alert ">Mobile Number required!</div>
+     </div>
+
+     <div class="form-group">
+      <label for="email">Email</label>
+      <pre></pre>
+      <input type="email" name="mail"  [(ngModel)]="form.mail" required  #mail="ngModel">
+      <div *ngIf="mail.errors?.required && f.submitted"class="alert ">Email required!</div>
+   </div>
+    <div class="form-group">
+      <pre></pre>
+      <button class="btn btn-primary btn-block" >Submit</button>
+    </div>
+
+   </form>
+    </div>
+  </div>
+<div class="col">
+  <div class="card-table">
+    <div class="cart-product">
+      <table class="table table-responsive">
+        <th></th>
+        <tbody>
+          <tr *ngFor="let item of products let i=index">
+            <td>{{i+1}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.price}}</td>
+          </tr>
+          <tr>
+
+            <td><button class="btn btn-danger"(click)="emptycart()">Empty Cart</button></td>
+            <td><button class="btn btn-primary" routerLink="/products">Shop More</button></td>
+            <td><strong>Grand Total : Rs.{{grandTotal}}</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+  </div>

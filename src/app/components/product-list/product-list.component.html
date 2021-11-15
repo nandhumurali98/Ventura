@@ -1,0 +1,71 @@
+<div class="container">
+  <button class="btn btn-primary" (click)="reload()">Add Products</button>
+</div>
+<div class="list row">
+  <div class="col-md-8">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Search by name" [(ngModel)]="name">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" (click)="searchName()">
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h4>Products List</h4>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let product of products; let i = index" [class.active]="i == currentIndex" (click)="setActiveProduct(product, i)">
+        {{ product.name }}
+      </li>
+    </ul>
+
+    <button class="m-3 btn btn-sm btn-danger" (click)="removeAllProducts()">
+      Remove All
+    </button>
+  </div>
+  <div class="col-md-6">
+    <div *ngIf="currentProduct.name">
+      <h4>Product</h4>
+      <div>
+        <label><strong>Category:</strong></label> {{ currentProduct.category }}
+      </div>
+      <div>
+        <label><strong>Name:</strong></label> {{ currentProduct.name }}
+      </div>
+      <div>
+        <label><strong>Picture:</strong></label>
+        {{ currentProduct.image_path }}
+      </div>
+      <div>
+        <label><strong>Price:</strong></label> {{ currentProduct.price }}
+      </div>
+      <div class="col-md-6">
+        <div *ngIf="searchName()">
+          <h4>Product</h4>
+          <div>
+            <label><strong>Category:</strong></label> {{ currentProduct.category }}
+          </div>
+          <div>
+            <label><strong>Name:</strong></label> {{ currentProduct.name }}
+          </div>
+          <div>
+            <label><strong>Picture:</strong></label>
+            {{ currentProduct.image_path }}
+          </div>
+          <div>
+            <label><strong>Price:</strong></label> {{ currentProduct.price }}
+          </div>
+
+      <!-- <a class="badge badge-warning" routerLink="/products/{{ currentProduct.name }}"> -->
+      <a class="badge badge-warning" routerLink="/products/{{ currentProduct.name }}">
+        Edit
+      </a>
+    </div>
+
+    <div *ngIf="!currentProduct">
+      <br />
+      <p>Please click on a Product...</p>
+    </div>
+  </div>
+</div>

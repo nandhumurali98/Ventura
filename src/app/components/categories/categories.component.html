@@ -1,0 +1,16 @@
+<div>
+<h4 class="title">
+  Explore Our Furniture Range
+</h4>
+<hr>
+<div class="container-fluid container">
+    <ng-container *ngFor="let category of categoryList ">
+      <div class="inner-container">
+      <a (click)="filter('{{category.category}}')" routerLink="category/{{category.category_id}}" data-toggle="tooltip" data-placement="bottom" title="Bed">
+        <img class="icons"  src="{{category.image}}" alt="">
+      </a>
+    </div>
+  </ng-container>
+  </div>
+</div>
+

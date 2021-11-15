@@ -1,0 +1,19 @@
+.card{
+  height: 60vh;
+  margin: 25px;
+  padding: 25px;
+}
+.center{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.img{
+  height: 100px;
+  width: 100px;
+}
+h4,h6{
+  font-weight: 400;
+}

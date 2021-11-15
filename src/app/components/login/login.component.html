@@ -1,0 +1,58 @@
+<!-- Modal -->
+<div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <img src="assets/icons/user.png" height="100px" width="100px" class="modal-title login" id="staticBackdropLabel" alt="">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+      </div>
+      <div class="modal-body login-input">
+
+        <form #f="ngForm" *ngIf="!isLoggedIn" name="form" (ngSubmit)="f.form.valid && onSubmit()" novalidate>
+
+          <div class="form-group">
+            <label for="username">Username</label>
+            <pre></pre>
+            <input type="text" name="username" [(ngModel)]="form.username" required #username="ngModel" autocomplete="off">
+            <div *ngIf="username.untouched && f.submitted" class="alert">Username required!</div>
+            <pre></pre>
+          </div>
+
+          <div class="form-group">
+             <label for="password">Password</label>
+             <pre></pre>
+             <input type="password" name="password"  [(ngModel)]="form.password" required minlength="6" #password="ngModel">
+             <div *ngIf="password.errors?.required && f.submitted"class="alert ">Password required!</div>
+             <div *ngIf="password.errors?.minlength"class="alert"> Must contain at least 6 characters!</div>
+          </div>
+
+        <div class="form-group">
+          <pre></pre>
+          <button class="btn btn-primary btn-block" >Login</button>
+          <pre></pre>
+          <p>Don't have a account  <a routerLink="register">Register here!</a></p>
+        </div>
+
+        <div class="form-group">
+        <div class="alert-danger" role="alert" *ngIf="f.submitted && isLoginFailed" data-bs-dismiss="modal" >
+          Login failed: {{ errorMessage }}
+        </div>
+
+      </div>
+      </form>
+      </div>
+
+      <div class="modal-footer form-group">
+        <div class="alert alert-success" *ngIf="isLoggedIn">
+          Logged in as {{ roles }}.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
