@@ -11,7 +11,11 @@ db.role = require("./role.model");
 
 db.product = require("./product.model");
 
-db.category = require("./category.model")
+db.category = require("./category.model");
+
+db.profile = require("./profile.model");
+
+db.order = require("./order.model");
 
 db.ROLES = ["user", "admin"];
 module.exports = db;

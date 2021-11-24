@@ -1,3 +1,4 @@
+import { CategoryService } from './../../_services/category.service';
 import { ProductService } from 'src/app/_services/product.service';
 import { WishlistService } from './../../_services/wishlist.service';
 import { CartService } from './../../_services/cart.service';
@@ -14,6 +15,7 @@ export class NavbarComponent {
   private roles!:string[];
   public filterCategory:any;
   public productList:any;
+  public categoryList:any;
   isLoggedIn=false;
   showAdmin=false;
   username!: string;
@@ -22,7 +24,8 @@ export class NavbarComponent {
   constructor(private tokenStorageService:TokenStorageService,
              private cartService:CartService,
              private productService:ProductService,
-             private wishlistService:WishlistService){}
+             private wishlistService:WishlistService,
+             private categoryService:CategoryService){}
 
   ngOnInit():void{
     this.isLoggedIn=!!this.tokenStorageService.getToken();
@@ -46,7 +49,13 @@ export class NavbarComponent {
       .subscribe(res=>{
         this.filterCategory = res;
         this.productList = res;
+        console.log(this.productList);
       })
+      this.categoryService.getAll()
+       .subscribe(res=>{
+         this.categoryList = res;
+         console.log(this.categoryList);
+       })
   }
   logout():void{
     this.tokenStorageService.signOut();

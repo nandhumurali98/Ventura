@@ -6,12 +6,12 @@ import { AuthService } from 'src/app/_services/auth.service';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
-export class RegisterComponent implements OnInit {
+export class RegisterComponent  {
 
   form: any = {
     username: null,
     email: null,
-    password: null
+    password: null,
   };
   isSuccessful = false;
   isSignUpFailed = false;
@@ -19,11 +19,8 @@ export class RegisterComponent implements OnInit {
 
   constructor(private authService: AuthService) { }
 
-  ngOnInit(): void {
-  }
-
   onSubmit(): void {
-    const { username, email, password } = this.form;
+    const { username, email, password} = this.form;
 
     this.authService.register(username, email, password).subscribe(
       data => {

@@ -1,11 +1,44 @@
-*{
-  margin: 2%;
+.row{
+  margin: 8% 0 8% 0;
+}
+.address{
+  position: relative;
+  right: 100px;
+  margin: 0;
 }
 .container{
-  border: 1px solid black;
+  background-color: rgb(230, 227, 227);
+  width: 600px;
+  padding: 5%;
+  box-shadow:  4px 5px 23px 0px rgba(135,127,135,0.75);
+  text-align: left;
 }
 input{
   border: none;
   border-bottom: 1px solid black;
   outline:none;
+  width: 100%;
+  background-color: transparent;
+  margin: 2%;
+}
+.cart{
+  width: 300px;
+}
+.cart-product{
+  position: relative;
+  right: 50px;
+}
+.cart-button{
+  padding: 4%;
+  font-size: 15px;
+}
+.card-table{
+  width: 400px;
+}
+.table{
+  box-shadow:  4px 5px 23px 0px rgba(135,127,135,0.75);
+}
+.submit{
+  text-align: center;
+  margin-top: 4%;
 }

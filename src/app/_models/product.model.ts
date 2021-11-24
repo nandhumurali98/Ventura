@@ -1,4 +1,5 @@
 export class Product {
+  id?:string;
   category?:string;
   category_id?:number;
   name?:string;

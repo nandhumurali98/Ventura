@@ -5,42 +5,34 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"aria-expanded="true" aria-controls="collapseOne">
-              Add Product
+              Add Category
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <app-add-product></app-add-product>
+              <app-add-category></app-add-category>
             </div>
         </div>
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Update Product
+            Update Category
           </button>
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
           <div class="accordion-body update-form">
               <form #form="ngForm"class="mt-4">
                 <div class="form-group">
-                  <label for="category">Category</label>
-                  <input type="text" name="category" [(ngModel)]="currentProduct.category" required  class="form-control">
-                </div>
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" [(ngModel)]="currentProduct.name" required  id="name" class="form-control">
+                  <label for="category">Category Name</label>
+                  <input type="text" name="category" [(ngModel)]="currentCategory.category" required  class="form-control">
                 </div>
 
                 <div class="form-group">
                   <label for="image_path">Image Path</label>
-                  <input type="text" name="image_path" [(ngModel)]="currentProduct.image_path" required class="form-control">
+                  <input type="text" name="image_path" [(ngModel)]="currentCategory.image" required class="form-control">
                 </div>
-                <div class="form-group">
-                  <label for="price">Price</label>
-                  <input type="text" name="price" [(ngModel)]="currentProduct.price" class="form-control">
-                </div>
-                <button  class="btn btn-outline-success" (click)="updateProduct()" >Update</button>
+                <button  class="btn btn-outline-success" (click)="updateCategory()" >Update</button>
               </form>
             </div>
            </div>
@@ -52,7 +44,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"aria-expanded="true" aria-controls="collapseTwo">
-            Product List
+            Category List
            </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"data-bs-parent="#productList">
@@ -62,22 +54,18 @@
                   <tr>
                     <th scope="col">No.</th>
                     <th scope="col">Image</th>
-                    <th scope="col">Name</th>
                     <th scope="col">Category</th>
-                    <th scope="col">Price</th>
                     <th scope="col">Action</th>
                   </tr>
                 </thead>
-                <tbody *ngFor="let item of products;let i = index">
+                <tbody *ngFor="let item of categories;let i = index">
                   <tr>
                     <th [class.active]="i == currentIndex">{{i+1}}</th>
-                    <td><img src="{{item.image_path}}" alt="" width="50px" height="50px"></td>
-                    <td>{{item.name}}</td>
+                    <td><img src="{{item.image}}" alt="" width="50px" height="50px"></td>
                     <td>{{item.category}}</td>
-                    <td>{{item.price}}</td>
                     <td colspan="2">
-                      <button class="button btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" (click)="setActiveProduct(item,i)"><img src="assets/icons/edit.png" width="25px" height="25px" alt=""></button>
-                      <button class="button btn btn-outline-danger" (click)="deleteProduct()"><img src="assets/icons/delete.png" width="25px" height="25px" alt=""></button>
+                      <button class="button btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" (click)="setActiveCategory(item,i)"><img src="assets/icons/edit.png" width="25px" height="25px" alt=""></button>
+                      <button class="button btn btn-outline-danger" (click)="deleteCategory()"><img src="assets/icons/delete.png" width="25px" height="25px" alt=""></button>
                   </td>
                   </tr>
                 </tbody>

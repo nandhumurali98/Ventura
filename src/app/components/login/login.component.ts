@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit {
       this.isLoggedIn = true;
       this.roles = this.tokenStorage.getUser().roles;
     }
+
   }
 
   onSubmit(): void {
@@ -48,6 +49,11 @@ export class LoginComponent implements OnInit {
     );
 }
 reloadPage(): void {
-  window.location.href='http://localhost:8081/admin';
+  if(this.roles.includes('ROLE_ADMIN')){
+   window.location.href='http://localhost:8081/admin';
+  }
+  else{
+    window.location.href='http://localhost:8081/profile';
+  }
 }
 }

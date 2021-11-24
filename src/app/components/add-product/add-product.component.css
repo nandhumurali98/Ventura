@@ -2,3 +2,13 @@
   max-width: 400px;
   margin: auto;
 }
+.form-control{
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(156, 152, 152);
+}
+button{
+  text-align: center;
+  margin: 4% 0 4% 35%;
+  padding: 2% 5% 2% 5%;
+}

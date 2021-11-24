@@ -1,26 +1,73 @@
-<div class="container" *ngIf="currentUser; else loggedOut">
-  <header class="jumbotron">
-    <h3>
-      <strong>{{ currentUser.username }}</strong> Profile
-    </h3>
-  </header>
-  <!-- <p>
-    <strong>Token:</strong>
-    {{ currentUser.accessToken.substring(0, 20) }} ...
-    {{ currentUser.accessToken.substr(currentUser.accessToken.length - 20) }}
-  </p> -->
-  <p>
-    <strong>Email:</strong>
-    {{ currentUser.email }}
-  </p>
-  <strong>Roles:</strong>
-  <ul>
-    <li *ngFor="let role of currentUser.roles">
-      {{ role }}
-    </li>
-  </ul>
-</div>
 
+<div class="profile-container" *ngIf="currentUser; else loggedOut">
+      <h3 class="display-5">
+      Hi {{ currentUser.username }}!
+    </h3>
+     <nav class="navbar navbar-expand-lg">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" >My Profile</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" >My Orders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">My Wishlist</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="form-container" *ngIf="submitted" id="form">
+    <form #f="ngForm" name="form" (ngSubmit)="f.form.valid " novalidate>
+
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Name" [(ngModel)]="form.name" required #name="ngModel" autocomplete="off">
+        <div *ngIf="name.untouched && f.submitted" class="alert">Name required!</div>
+      </div>
+
+      <div class="form-group">
+         <input type="text" name="address" placeholder="Address" [(ngModel)]="form.address" required  #address="ngModel">
+         <div *ngIf="address.errors?.required && f.submitted"class="alert ">Address required!</div>
+      <div class="form-group">
+        <input type="text" name="mobile" placeholder="Mobile"  [(ngModel)]="form.mobile" required  #mobile="ngModel">
+        <div *ngIf="mobile.errors?.required && f.submitted"class="alert ">Mobile Number required!</div>
+     </div>
+
+     <div class="form-group">
+      <input type="email" name="mail" value="{{currentUser.email}}">
+   </div>
+    </div>
+    <div class="form-group">
+      <input type="button" value="Save Profile" (click)="saveProfile()" class="btn btn-dark">
+    </div>
+   </form>
+  </div>
+  <div class="form-container" *ngIf="!submitted" >
+    <div *ngFor="let item of profile">
+    <form>
+
+      <div class="form-group">
+        <label>{{item.name}}</label>
+      </div>
+
+      <div class="form-group">
+        <label>{{item.address}}</label>
+      </div>
+      <div class="form-group">
+        <label>{{item.mobile}}</label>
+        </div>
+
+     <div class="form-group">
+      <label>{{currentUser.email}}</label>
+   </div>
+    <div class="form-group">
+      <button (click)="saveProfile()" [disabled]="!submitted" class="btn btn-dark">Save Profile</button>
+    </div>
+   </form>
+  </div>
+</div>
 <ng-template #loggedOut>
   Please login.
 </ng-template>

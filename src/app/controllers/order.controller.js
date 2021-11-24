@@ -1,47 +1,49 @@
 const db = require("../models");
-const Product = db.product;
+const Order = db.order;
 
 exports.create = (req,res)=>{
-  if(!req.body.name && !req.body.category){
+  if(!req.body.name){
    return res.status(400).send({message:"Cannot be empty"});
   }
-  const product = new Product({
-    category:req.body.category,
+  const order = new Order({
     name:req.body.name,
-    image_path:req.body.image_path,
-    price:req.body.price
+    address:req.body.address,
+    mobile:req.body.mobile,
+    email:req.body.email,
+    product_name:req.body.product_name,
+    total_price:req.body.total_price
   });
-  product
-    .save(product)
+  order
+    .save(order)
     .then(data =>{
       res.send(data);
     })
     .catch(err =>{
       res.status(500).send({
         message:
-          err.message || "Error Occured while creating the Product"
+          err.message || "Error Occured while creating the Order"
       });
     });
 };
 exports.findAll = (req, res) => {
-  const category = req.query.category;
-  var condition = category ? { category: { $regex: new RegExp(category), $options: "i" } } : {};
+  const name = req.query.name;
+  var condition = name ? { name: { $regex: new RegExp(name), $options: "i" } } : {};
 
-  Product.find(condition)
+  Order.find(condition)
     .then(data => {
       res.send(data);
     })
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while retrieving Products."
+          err.message || "Some error occurred while retrieving Orders."
       });
     });
 };
 exports.findOne=(req,res)=>{
   const id = req.params.id;
 
-  Product.findById(id)
+  Order.findById(id)
    .then(data => {
      if(!data)
       res.status(404).send({message:"Not Found!"});
@@ -50,7 +52,7 @@ exports.findOne=(req,res)=>{
    .catch(err =>{
      res
        .status(500)
-       .send({message:"Error retrieving Product"})
+       .send({message:"Error retrieving Order"})
    });
 };
 exports.update=(req,res)=>{
@@ -62,51 +64,51 @@ exports.update=(req,res)=>{
 
   const id = req.params.id;
 
-  Product.findByIdAndUpdate(id, req.body, { useFindAndModify: false })
+  Order.findByIdAndUpdate(id, req.body, { useFindAndModify: false })
     .then(data => {
       if (!data) {
         res.status(404).send({
-          message: `Cannot update Product. Maybe Product was not found!`
+          message: `Cannot update Order. Maybe Order was not found!`
         });
-      } else res.send({ message: "Product updated successfully." });
+      } else res.send({ message: "Order updated successfully." });
     })
     .catch(err => {
       res.status(500).send({
-        message: "Error updating Product"
+        message: "Error updating Order"
       });
     });
 };
 exports.delete = (req, res) => {
   const id = req.params._id;
 
-  Product.findByIdAndRemove(id)
+  Order.findByIdAndRemove(id)
     .then(data => {
       if (!data) {
         res.status(404).send({
-          message: `Cannot delete Product with id=${id}. Maybe Product was not found!`
+          message: `Cannot delete Order with id=${id}. Maybe Order was not found!`
         });
       } else {
         res.send({
-          message: "Product was deleted successfully!"
+          message: "Order was deleted successfully!"
         });
       }
     })
     .catch(err => {
       res.status(500).send({
-        message: "Could not delete Product with id=" + id
+        message: "Could not delete Order with id=" + id
       });
     });
 };exports.deleteAll=(req,res)=>{
-  Product.deleteMany({})
+  Order.deleteMany({})
   .then(data => {
     res.send({
-      message: `${data.deletedCount} Product deleted successfully!`
+      message: `${data.deletedCount} Order deleted successfully!`
     });
   })
   .catch(err => {
     res.status(500).send({
       message:
-        err.message || "Error occurred while removing all products."
+        err.message || "Error occurred while removing all Orders."
     });
   });
 };

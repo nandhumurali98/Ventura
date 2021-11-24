@@ -40,6 +40,8 @@ db.mongoose
   require("./src/app/routes/user.routes")(app);
   require("./src/app/routes/product.routes")(app);
   require("./src/app/routes/category.routes")(app);
+  require("./src/app/routes/profile.routes")(app);
+  require("./src/app/routes/order.routes")(app);
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT,()=>{

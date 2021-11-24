@@ -7,7 +7,9 @@
   "image_path": "assets/products/Bed_1.jpg",
   "price": 15000,
   "__v": 0,
-  "category_id": 1
+  "category_id": {
+    "$oid": "6190fc937f946b1d147642b6"
+  }
 },{
   "_id": {
     "$oid": "6152e92d44ac8cd9328a0574"
@@ -17,7 +19,9 @@
   "image_path": "assets/products/Bed_2.jpg",
   "price": 20000,
   "__v": 0,
-  "category_id": 1
+  "category_id": {
+    "$oid": "6190fc937f946b1d147642b6"
+  }
 },{
   "_id": {
     "$oid": "6152e98544ac8cd9328a0578"
@@ -27,7 +31,9 @@
   "image_path": "assets/products/Bed_3.jpg",
   "price": 18000,
   "__v": 0,
-  "category_id": 1
+  "category_id": {
+    "$oid": "6190fc937f946b1d147642b6"
+  }
 },{
   "_id": {
     "$oid": "6152e9d344ac8cd9328a057c"
@@ -37,7 +43,9 @@
   "image_path": "assets/products/Bed_4.jpg",
   "price": 12000,
   "__v": 0,
-  "category_id": 1
+  "category_id": {
+    "$oid": "6190fc937f946b1d147642b6"
+  }
 },{
   "_id": {
     "$oid": "6152ea0844ac8cd9328a0580"
@@ -47,7 +55,9 @@
   "image_path": "assets/products/Bed_5.jpg",
   "price": 25000,
   "__v": 0,
-  "category_id": 1
+  "category_id": {
+    "$oid": "6190fc937f946b1d147642b6"
+  }
 },{
   "_id": {
     "$oid": "6152ea3a44ac8cd9328a0584"
@@ -57,7 +67,9 @@
   "image_path": "assets/products/Bed_6.jpg",
   "price": 22000,
   "__v": 0,
-  "category_id": 1
+  "category_id": {
+    "$oid": "6190fc937f946b1d147642b6"
+  }
 },{
   "_id": {
     "$oid": "6152eada44ac8cd9328a0588"
@@ -67,7 +79,9 @@
   "image_path": "assets/products/Chair_1.jpg",
   "price": 22000,
   "__v": 0,
-  "category_id": 2
+  "category_id": {
+    "$oid": "6190fd327f946b1d147642b7"
+  }
 },{
   "_id": {
     "$oid": "61532bd844ac8cd9328a05a6"
@@ -77,7 +91,9 @@
   "image_path": "assets/products/Chair_2.jpg",
   "price": 18000,
   "__v": 0,
-  "category_id": 2
+  "category_id": {
+    "$oid": "6190fd327f946b1d147642b7"
+  }
 },{
   "_id": {
     "$oid": "61532c5544ac8cd9328a05ac"
@@ -87,7 +103,9 @@
   "image_path": "assets/products/Chair_3jpg",
   "price": 21000,
   "__v": 0,
-  "category_id": 2
+  "category_id": {
+    "$oid": "6190fd327f946b1d147642b7"
+  }
 },{
   "_id": {
     "$oid": "61532ca444ac8cd9328a05b2"
@@ -97,7 +115,9 @@
   "image_path": "assets/products/Chair_4.jpg",
   "price": 4000,
   "__v": 0,
-  "category_id": 2
+  "category_id": {
+    "$oid": "6190fd327f946b1d147642b7"
+  }
 },{
   "_id": {
     "$oid": "61532d0f44ac8cd9328a05b8"
@@ -107,7 +127,9 @@
   "image_path": "assets/products/Chair_6.jpg",
   "price": 10000,
   "__v": 0,
-  "category_id": 2
+  "category_id": {
+    "$oid": "6190fd327f946b1d147642b7"
+  }
 },{
   "_id": {
     "$oid": "61532d9944ac8cd9328a05be"
@@ -117,7 +139,9 @@
   "image_path": "assets/products/Wardrobe_1.jpg",
   "price": 14000,
   "__v": 0,
-  "category_id": 3
+  "category_id": {
+    "$oid": "6190fd767f946b1d147642b8"
+  }
 },{
   "_id": {
     "$oid": "61532dff44ac8cd9328a05c4"
@@ -127,7 +151,9 @@
   "image_path": "assets/products/Wardrobe_2.jpg",
   "price": 24000,
   "__v": 0,
-  "category_id": 3
+  "category_id": {
+    "$oid": "6190fd767f946b1d147642b8"
+  }
 },{
   "_id": {
     "$oid": "61532e3d44ac8cd9328a05ca"
@@ -137,7 +163,9 @@
   "image_path": "assets/products/Wardrobe_3.jpg",
   "price": 23000,
   "__v": 0,
-  "category_id": 3
+  "category_id": {
+    "$oid": "6190fd767f946b1d147642b8"
+  }
 },{
   "_id": {
     "$oid": "61532e7644ac8cd9328a05d0"
@@ -147,7 +175,9 @@
   "image_path": "assets/products/Wardrobe_4.jpg",
   "price": 25000,
   "__v": 0,
-  "category_id": 3
+  "category_id": {
+    "$oid": "6190fd767f946b1d147642b8"
+  }
 },{
   "_id": {
     "$oid": "61532eb144ac8cd9328a05d6"
@@ -157,7 +187,9 @@
   "image_path": "assets/products/Wardrobe_5.jpg",
   "price": 26000,
   "__v": 0,
-  "category_id": 3
+  "category_id": {
+    "$oid": "6190fd767f946b1d147642b8"
+  }
 },{
   "_id": {
     "$oid": "61532f0444ac8cd9328a05dc"
@@ -167,7 +199,9 @@
   "image_path": "assets/products/Wardrobe_6.jpg",
   "price": 26000,
   "__v": 0,
-  "category_id": 3
+  "category_id": {
+    "$oid": "6190fd767f946b1d147642b8"
+  }
 },{
   "_id": {
     "$oid": "61532f9544ac8cd9328a05e2"
@@ -177,7 +211,9 @@
   "image_path": "assets/products/Decor_1.jpg",
   "price": 3000,
   "__v": 0,
-  "category_id": 4
+  "category_id": {
+    "$oid": "6190fdc67f946b1d147642b9"
+  }
 },{
   "_id": {
     "$oid": "6153300244ac8cd9328a05e8"
@@ -187,7 +223,9 @@
   "image_path": "assets/products/Decor_2.jpg",
   "price": 4000,
   "__v": 0,
-  "category_id": 4
+  "category_id": {
+    "$oid": "6190fdc67f946b1d147642b9"
+  }
 },{
   "_id": {
     "$oid": "615330a044ac8cd9328a05fd"
@@ -197,7 +235,9 @@
   "image_path": "assets/products/Decor_3.jpg",
   "price": 6000,
   "__v": 0,
-  "category_id": 4
+  "category_id": {
+    "$oid": "6190fdc67f946b1d147642b9"
+  }
 },{
   "_id": {
     "$oid": "6153312244ac8cd9328a0603"
@@ -207,7 +247,9 @@
   "image_path": "assets/products/Decor_4.jpg",
   "price": 7000,
   "__v": 0,
-  "category_id": 4
+  "category_id": {
+    "$oid": "6190fdc67f946b1d147642b9"
+  }
 },{
   "_id": {
     "$oid": "6153319844ac8cd9328a0609"
@@ -217,7 +259,9 @@
   "image_path": "assets/products/Decor_5.jpg",
   "price": 5000,
   "__v": 0,
-  "category_id": 4
+  "category_id": {
+    "$oid": "6190fdc67f946b1d147642b9"
+  }
 },{
   "_id": {
     "$oid": "6153320544ac8cd9328a060f"
@@ -227,7 +271,9 @@
   "image_path": "assets/products/Decor_6.jpg",
   "price": 7500,
   "__v": 0,
-  "category_id": 4
+  "category_id": {
+    "$oid": "6190fdc67f946b1d147642b9"
+  }
 },{
   "_id": {
     "$oid": "615332ac44ac8cd9328a0615"
@@ -237,7 +283,9 @@
   "image_path": "assets/products/Dining_1.jpg",
   "price": 28000,
   "__v": 0,
-  "category_id": 5
+  "category_id": {
+    "$oid": "6190fe047f946b1d147642ba"
+  }
 },{
   "_id": {
     "$oid": "615332e544ac8cd9328a061b"
@@ -247,7 +295,9 @@
   "image_path": "assets/products/Dining_2.jpg",
   "price": 30000,
   "__v": 0,
-  "category_id": 5
+  "category_id": {
+    "$oid": "6190fe047f946b1d147642ba"
+  }
 },{
   "_id": {
     "$oid": "6153331d44ac8cd9328a0621"
@@ -257,7 +307,9 @@
   "image_path": "assets/products/Dining_3.jpg",
   "price": 32000,
   "__v": 0,
-  "category_id": 5
+  "category_id": {
+    "$oid": "6190fe047f946b1d147642ba"
+  }
 },{
   "_id": {
     "$oid": "6153339844ac8cd9328a0627"
@@ -267,7 +319,9 @@
   "image_path": "assets/products/Dining_5.jpg",
   "price": 34000,
   "__v": 0,
-  "category_id": 5
+  "category_id": {
+    "$oid": "6190fe047f946b1d147642ba"
+  }
 },{
   "_id": {
     "$oid": "615333c744ac8cd9328a062f"
@@ -277,7 +331,9 @@
   "image_path": "assets/products/Dining_6.jpg",
   "price": 35000,
   "__v": 0,
-  "category_id": 5
+  "category_id": {
+    "$oid": "6190fe047f946b1d147642ba"
+  }
 },{
   "_id": {
     "$oid": "6153344544ac8cd9328a063c"
@@ -287,7 +343,9 @@
   "image_path": "assets/products/Dining_4.jpg",
   "price": 29000,
   "__v": 0,
-  "category_id": 5
+  "category_id": {
+    "$oid": "6190fe047f946b1d147642ba"
+  }
 },{
   "_id": {
     "$oid": "615334bf44ac8cd9328a0640"
@@ -297,7 +355,9 @@
   "image_path": "assets/products/Matt_1.jpg",
   "price": 12000,
   "__v": 0,
-  "category_id": 6
+  "category_id": {
+    "$oid": "6190fe437f946b1d147642bb"
+  }
 },{
   "_id": {
     "$oid": "6153351044ac8cd9328a064d"
@@ -307,7 +367,9 @@
   "image_path": "assets/products/Matt_2.jpg",
   "price": 14000,
   "__v": 0,
-  "category_id": 6
+  "category_id": {
+    "$oid": "6190fe437f946b1d147642bb"
+  }
 },{
   "_id": {
     "$oid": "6153354844ac8cd9328a0651"
@@ -317,7 +379,9 @@
   "image_path": "assets/products/Matt_3.jpg",
   "price": 8000,
   "__v": 0,
-  "category_id": 6
+  "category_id": {
+    "$oid": "6190fe437f946b1d147642bb"
+  }
 },{
   "_id": {
     "$oid": "6153356e44ac8cd9328a0655"
@@ -327,7 +391,9 @@
   "image_path": "assets/products/Matt_4.jpg",
   "price": 9000,
   "__v": 0,
-  "category_id": 6
+  "category_id": {
+    "$oid": "6190fe437f946b1d147642bb"
+  }
 },{
   "_id": {
     "$oid": "6153359e44ac8cd9328a0659"
@@ -337,7 +403,9 @@
   "image_path": "assets/products/Matt_5.jpg",
   "price": 11000,
   "__v": 0,
-  "category_id": 6
+  "category_id": {
+    "$oid": "6190fe437f946b1d147642bb"
+  }
 },{
   "_id": {
     "$oid": "615335d944ac8cd9328a065d"
@@ -347,7 +415,9 @@
   "image_path": "assets/products/Matt_6.jpg",
   "price": 15000,
   "__v": 0,
-  "category_id": 6
+  "category_id": {
+    "$oid": "6190fe437f946b1d147642bb"
+  }
 },{
   "_id": {
     "$oid": "615336e544ac8cd9328a0665"
@@ -357,7 +427,9 @@
   "image_path": "assets/products/Sofa_1.jpg",
   "price": 35000,
   "__v": 0,
-  "category_id": 7
+  "category_id": {
+    "$oid": "6190fe7f7f946b1d147642bc"
+  }
 },{
   "_id": {
     "$oid": "615337ec44ac8cd9328a0669"
@@ -367,7 +439,9 @@
   "image_path": "assets/products/Sofa_2.jpg",
   "price": 38000,
   "__v": 0,
-  "category_id": 7
+  "category_id": {
+    "$oid": "6190fe7f7f946b1d147642bc"
+  }
 },{
   "_id": {
     "$oid": "6153384644ac8cd9328a066d"
@@ -377,7 +451,9 @@
   "image_path": "assets/products/Sofa_3.jpg",
   "price": 40000,
   "__v": 0,
-  "category_id": 7
+  "category_id": {
+    "$oid": "6190fe7f7f946b1d147642bc"
+  }
 },{
   "_id": {
     "$oid": "6153389144ac8cd9328a0671"
@@ -387,7 +463,9 @@
   "image_path": "assets/products/Sofa_5.jpg",
   "price": 42000,
   "__v": 0,
-  "category_id": 7
+  "category_id": {
+    "$oid": "6190fe7f7f946b1d147642bc"
+  }
 },{
   "_id": {
     "$oid": "615338b044ac8cd9328a0675"
@@ -397,7 +475,9 @@
   "image_path": "assets/products/Sofa_6.jpg",
   "price": 43000,
   "__v": 0,
-  "category_id": 7
+  "category_id": {
+    "$oid": "6190fe7f7f946b1d147642bc"
+  }
 },{
   "_id": {
     "$oid": "61533c5544ac8cd9328a067b"
@@ -407,7 +487,9 @@
   "image_path": "assets/products/CF_1.jpg",
   "price": 24000,
   "__v": 0,
-  "category_id": 8
+  "category_id": {
+    "$oid": "6190feb17f946b1d147642bd"
+  }
 },{
   "_id": {
     "$oid": "61533c9344ac8cd9328a067f"
@@ -417,7 +499,9 @@
   "image_path": "assets/products/CF_2.jpg",
   "price": 18500,
   "__v": 0,
-  "category_id": 8
+  "category_id": {
+    "$oid": "6190feb17f946b1d147642bd"
+  }
 },{
   "_id": {
     "$oid": "61533cc744ac8cd9328a0683"
@@ -427,7 +511,9 @@
   "image_path": "assets/products/CF_3.jpg",
   "price": 19900,
   "__v": 0,
-  "category_id": 8
+  "category_id": {
+    "$oid": "6190feb17f946b1d147642bd"
+  }
 },{
   "_id": {
     "$oid": "61533d9d44ac8cd9328a0687"
@@ -437,7 +523,9 @@
   "image_path": "assets/products/CF_4.jpg",
   "price": 21900,
   "__v": 0,
-  "category_id": 8
+  "category_id": {
+    "$oid": "6190feb17f946b1d147642bd"
+  }
 },{
   "_id": {
     "$oid": "61533e1544ac8cd9328a068b"
@@ -447,7 +535,9 @@
   "image_path": "assets/products/CF_5.jpg",
   "price": 24200,
   "__v": 0,
-  "category_id": 8
+  "category_id": {
+    "$oid": "6190feb17f946b1d147642bd"
+  }
 },{
   "_id": {
     "$oid": "61533e4244ac8cd9328a068f"
@@ -457,7 +547,9 @@
   "image_path": "assets/products/CF_6.jpg",
   "price": 26300,
   "__v": 0,
-  "category_id": 8
+  "category_id": {
+    "$oid": "6190feb17f946b1d147642bd"
+  }
 },{
   "_id": {
     "$oid": "61533f9f44ac8cd9328a0693"
@@ -467,7 +559,9 @@
   "image_path": "assets/products/TV_1.jpg",
   "price": 50000,
   "__v": 0,
-  "category_id": 9
+  "category_id": {
+    "$oid": "6190fef57f946b1d147642be"
+  }
 },{
   "_id": {
     "$oid": "61533fda44ac8cd9328a0697"
@@ -477,7 +571,9 @@
   "image_path": "assets/products/TV_2.jpg",
   "price": 51000,
   "__v": 0,
-  "category_id": 9
+  "category_id": {
+    "$oid": "6190fef57f946b1d147642be"
+  }
 },{
   "_id": {
     "$oid": "6153402744ac8cd9328a069b"
@@ -487,7 +583,9 @@
   "image_path": "assets/products/TV_3.jpg",
   "price": 5600,
   "__v": 0,
-  "category_id": 9
+  "category_id": {
+    "$oid": "6190fef57f946b1d147642be"
+  }
 },{
   "_id": {
     "$oid": "6153406544ac8cd9328a069f"
@@ -497,7 +595,9 @@
   "image_path": "assets/products/TV_4.jpg",
   "price": 45000,
   "__v": 0,
-  "category_id": 9
+  "category_id": {
+    "$oid": "6190fef57f946b1d147642be"
+  }
 },{
   "_id": {
     "$oid": "615340a944ac8cd9328a06a3"
@@ -507,7 +607,9 @@
   "image_path": "assets/products/TV_5.jpg",
   "price": 57000,
   "__v": 0,
-  "category_id": 9
+  "category_id": {
+    "$oid": "6190fef57f946b1d147642be"
+  }
 },{
   "_id": {
     "$oid": "615340eb44ac8cd9328a06a7"
@@ -517,7 +619,9 @@
   "image_path": "assets/products/TV_6.jpg",
   "price": 33000,
   "__v": 0,
-  "category_id": 9
+  "category_id": {
+    "$oid": "6190fef57f946b1d147642be"
+  }
 },{
   "_id": {
     "$oid": "6153413e44ac8cd9328a06ab"
@@ -527,7 +631,9 @@
   "image_path": "assets/products/Bs_1.jpg",
   "price": 24899,
   "__v": 0,
-  "category_id": 10
+  "category_id": {
+    "$oid": "6190ff2b7f946b1d147642bf"
+  }
 },{
   "_id": {
     "$oid": "6153417f44ac8cd9328a06af"
@@ -537,7 +643,7 @@
   "image_path": "assets/products/Bs_2.jpg",
   "price": 12239,
   "__v": 0,
-  "category_id": 10
+  "category_id": {}
 },{
   "_id": {
     "$oid": "615341ee44ac8cd9328a06b3"
@@ -547,7 +653,9 @@
   "image_path": "assets/products/Bs_3.jpg",
   "price": 17399,
   "__v": 0,
-  "category_id": 10
+  "category_id": {
+    "$oid": "6190ff2b7f946b1d147642bf"
+  }
 },{
   "_id": {
     "$oid": "6153422344ac8cd9328a06b7"
@@ -557,7 +665,9 @@
   "image_path": "assets/products/Bs_4.jpg",
   "price": 13259,
   "__v": 0,
-  "category_id": 10
+  "category_id": {
+    "$oid": "6190ff2b7f946b1d147642bf"
+  }
 },{
   "_id": {
     "$oid": "6153425244ac8cd9328a06bb"
@@ -567,7 +677,9 @@
   "image_path": "assets/products/Bs_5.jpg",
   "price": 24299,
   "__v": 0,
-  "category_id": 10
+  "category_id": {
+    "$oid": "6190ff2b7f946b1d147642bf"
+  }
 },{
   "_id": {
     "$oid": "6153429544ac8cd9328a06bf"
@@ -577,7 +689,9 @@
   "image_path": "assets/products/Bs_6.jpg",
   "price": 8799,
   "__v": 0,
-  "category_id": 10
+  "category_id": {
+    "$oid": "6190ff2b7f946b1d147642bf"
+  }
 },{
   "_id": {
     "$oid": "6153435e44ac8cd9328a06cc"
@@ -587,7 +701,9 @@
   "image_path": "assets/products/Chair_5.jpg",
   "price": 19250,
   "__v": 0,
-  "category_id": 2
+  "category_id": {
+    "$oid": "6190fd327f946b1d147642b7"
+  }
 },{
   "_id": {
     "$oid": "615343fe44ac8cd9328a06d0"
@@ -597,5 +713,7 @@
   "image_path": "assets/products/Sofa_5.jpg",
   "price": 20250,
   "__v": 0,
-  "category_id": 7
+  "category_id": {
+    "$oid": "6190fe7f7f946b1d147642bc"
+  }
 }]
