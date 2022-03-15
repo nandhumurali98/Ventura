@@ -97,7 +97,6 @@ export class CategoryListComponent implements OnInit {
 searchCategory():void{
   this.currentCategory={};
   this.currentIndex=0;
-
   this.categoryService.findByCategory(this.name)
     .subscribe(
       data=>{

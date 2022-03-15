@@ -1,3 +1,4 @@
+import { OrderListComponent } from './components/order-list/order-list.component';
 import { CategoryListComponent } from './components/category-list/category-list.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
@@ -13,8 +14,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProfileComponent } from './components/profile/profile.component';
 const routes: Routes = [
-   // { path: "login", component:LoginComponent},
-    //{ path: "register", component:RegisterComponent},
+    { path: "login", component:LoginComponent},
+   { path: "register", component:RegisterComponent},
    { path:'profile',component:ProfileComponent},
    { path:'admin', component:AdminComponent},
     { path:'products',component:ProductsComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
    { path:'cart',component:CartComponent},
    { path:'',component:HomeComponent},
    { path:'home',component:HomeComponent},
+   { path:'admin/orders', component:OrderListComponent},
    { path:'admin/products',component:ProductListComponent},
    { path:'add',component:AddProductComponent},
    { path:'wishlist',component:WishlistComponent},

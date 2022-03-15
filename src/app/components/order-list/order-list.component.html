@@ -1,0 +1,27 @@
+<div class="col-6 product-list">
+      <h2  id="headingTwo">
+        Order List
+      </h2>
+      <table class="table table-hover table-responsive">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Total</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let item of orders;let i = index">
+              <tr>
+                <th [class.active]="i == currentIndex">{{i+1}}</th>
+                <td>{{item.name}}</td>
+                <td>{{item.address}}</td>
+                <td>{{item.total_price}}</td>
+                <td colspan="2">
+                  <button class="button btn btn-outline-danger" (click)="deleteOrder()"><img src="assets/icons/delete.png" width="25px" height="25px" alt=""></button>
+              </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>

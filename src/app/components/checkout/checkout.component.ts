@@ -28,6 +28,7 @@ export class CheckoutComponent implements OnInit {
     email:''
   };
   submitted = false;
+  isOrdered=false;
   constructor(private cartService : CartService,
               private profileService:ProfileService,
               private orderService:OrderService,

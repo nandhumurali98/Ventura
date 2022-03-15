@@ -1,27 +1,16 @@
-<div class="row">
+<div class="row" >
   <div class="col">
     <div class="address">
     <div class="container">
       <h5>Billing Address</h5>
-      <form #f="ngForm" *ngFor="let item of profile" name="form" (ngSubmit)="f.form.valid " novalidate>
-
+      <form #f="ngForm"name="form" (ngSubmit)="f.form.valid " novalidate>
         <div class="form-group">
           <input type="text" placeholder="Name" name="name" [(ngModel)]="form.name" #name="ngModel" >
-        </div>
-
-        <div class="form-group">
            <input type="text" placeholder="Address" name="address" [(ngModel)]="form.address" #address="ngModel">
-
-        <div class="form-group">
           <input type="text" placeholder="Mobile" name="mobile" [(ngModel)]="form.mobile"   #mobile="ngModel">
-
-       </div>
-
-       <div class="form-group">
         <input type="email" name="mail" placeholder="Email"[(ngModel)]="form.email"   #email="ngModel">
      </div>
-      </div>
-         </form>
+    </form>
      </div>
   </div>
   </div>
@@ -29,7 +18,7 @@
   <div class="card-table">
     <div class="cart-product">
       <table class="table table-responsive table-hover table-striped">
-        <h5>Your Cart</h5>
+        <h5 style="margin: 8px;">Your Cart</h5>
         <th></th>
         <tbody>
           <tr *ngFor="let item of products let i=index">
@@ -39,7 +28,6 @@
             <td>{{item.price}}</td>
           </tr>
           <tr>
-
             <td><button class="btn cart-button btn-danger"(click)="emptycart()">Empty Cart</button></td>
             <td><button class="btn cart-button btn-primary" routerLink="/products">Shop More</button></td>
             <td colspan="2"><strong>Grand Total : Rs.{{grandTotal}}</strong></td>
@@ -49,5 +37,13 @@
     </div>
   </div>
 </div>
-<button class="btn submit btn-primary btn-block"  (click)="saveOrder()">Place Order</button>
+<button class="btn submit btn-success btn-block" (click)="saveOrder()">Place Order</button>
   </div>
+  <div class="alert alert-success"*ngIf="isOrdered " role="alert">
+    Order Placed!
+  </div>
+
+  <!-- <div class="alert alert-success" *ngIf="ordered" role="alert">
+    Order Placed!
+  </div> -->
+

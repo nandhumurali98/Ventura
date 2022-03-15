@@ -3,7 +3,7 @@
       <h3 class="display-5">
       Hi {{ currentUser.username }}!
     </h3>
-     <nav class="navbar navbar-expand-lg">
+     <!-- <nav class="navbar navbar-expand-lg">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -17,9 +17,9 @@
           </li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
   </div>
-  <div class="form-container" *ngIf="submitted" id="form">
+  <div class="form-container" id="form">
     <form #f="ngForm" name="form" (ngSubmit)="f.form.valid " novalidate>
 
       <div class="form-group">
@@ -36,15 +36,18 @@
      </div>
 
      <div class="form-group">
-      <input type="email" name="mail" value="{{currentUser.email}}">
+      <input type="email" name="mail" placeholder="Email" [(ngModel)]="form.email" required #email="ngModel">
+      <div *ngIf="email.errors?.required && f.submitted"class="alert ">Email required!</div>
+
    </div>
-    </div>
+
     <div class="form-group">
       <input type="button" value="Save Profile" (click)="saveProfile()" class="btn btn-dark">
     </div>
+      </div>
    </form>
   </div>
-  <div class="form-container" *ngIf="!submitted" >
+  <!-- <div class="form-container" *ngIf="!submitted" >
     <div *ngFor="let item of profile">
     <form>
 
@@ -64,10 +67,7 @@
    </div>
     <div class="form-group">
       <button (click)="saveProfile()" [disabled]="!submitted" class="btn btn-dark">Save Profile</button>
-    </div>
-   </form>
-  </div>
-</div>
-<ng-template #loggedOut>
+    </div> -->
+  <ng-template #loggedOut>
   Please login.
 </ng-template>

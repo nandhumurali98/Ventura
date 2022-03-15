@@ -18,6 +18,7 @@ export class ProfileComponent implements OnInit {
     name:"",
     address:"",
     mobile:0,
+    email:""
   };
   submitted = false;
   constructor(private token: TokenStorageService,
@@ -50,7 +51,6 @@ export class ProfileComponent implements OnInit {
      error => {
        console.log(error);
      });
-
   }
 }
   saveProfile():void{
@@ -68,5 +68,4 @@ export class ProfileComponent implements OnInit {
           console.log(error);
         });
   }
-
 }

@@ -28,6 +28,7 @@ import { FilterPipe } from './pipe/filter.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddCategoryComponent } from './components/add-category/add-category.component';
 import { CategoryListComponent } from './components/category-list/category-list.component';
+import { OrderListComponent } from './components/order-list/order-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +49,8 @@ import { CategoryListComponent } from './components/category-list/category-list.
     CheckoutComponent,
     FilterPipe,
     AddCategoryComponent,
-    CategoryListComponent
+    CategoryListComponent,
+    OrderListComponent
   ],
   imports: [
     BrowserModule,
